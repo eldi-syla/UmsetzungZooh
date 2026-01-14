@@ -25,7 +25,6 @@ export default function ZooTicketPurchaseFlow() {
 
   const total = cart.reduce((s, i) => s + i.price, 0);
 
-  /* ---------------- OVERVIEW ---------------- */
   if (screen === "overview")
     return (
       <div className="w-full max-w-2xl mx-auto">
@@ -62,7 +61,6 @@ export default function ZooTicketPurchaseFlow() {
       </div>
     );
 
-  /* ---------------- OFFERS ---------------- */
   if (screen === "offers")
     return (
       <div className="w-full max-w-2xl mx-auto">
@@ -97,7 +95,6 @@ export default function ZooTicketPurchaseFlow() {
       </div>
     );
 
-  /* ---------------- DETAILS ---------------- */
   if (screen === "details")
     return (
       <div className="w-full max-w-2xl mx-auto">
@@ -142,7 +139,6 @@ export default function ZooTicketPurchaseFlow() {
       </div>
     );
 
-  /* ---------------- CART ---------------- */
   if (screen === "cart")
     return (
       <div className="w-full max-w-2xl mx-auto">
@@ -195,7 +191,6 @@ export default function ZooTicketPurchaseFlow() {
       </div>
     );
 
-  /* ---------------- CHECKOUT ---------------- */
   if (screen === "checkout")
     return (
       <div className="w-full max-w-2xl mx-auto">
@@ -228,7 +223,6 @@ export default function ZooTicketPurchaseFlow() {
       </div>
     );
 
-  /* ---------------- CONFIRMATION ---------------- */
   return (
     <div className="w-full max-w-2xl mx-auto text-center py-12">
       <PageHeader title="Bestätigung" />

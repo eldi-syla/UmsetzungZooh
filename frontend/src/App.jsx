@@ -12,7 +12,7 @@ function App() {
   const [user, setUser] = useState(null);
   const [screen, setScreen] = useState("purchase");
 
-  // Hydrate from localStorage on mount
+  // from localStorage 
   useEffect(() => {
     const savedAuth = localStorage.getItem("zooAppAuth");
     const savedUser = localStorage.getItem("zooAppUser");
@@ -42,7 +42,7 @@ function App() {
     localStorage.removeItem("zooAppUser");
   };
 
-  // If not authenticated, show only login
+
   if (!isAuthenticated) {
     return (
       <div className="min-h-screen bg-gray-900 text-white">

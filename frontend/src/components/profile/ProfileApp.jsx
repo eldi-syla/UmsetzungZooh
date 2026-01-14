@@ -277,7 +277,7 @@ export default function ProfileApp({
   const SettingsPage = () => {
     const items = [
       { id: "profile", name: "Profil bearbeiten", icon: User },
-      { id: "password", name: "Passwort aendern", icon: Key },
+      { id: "password", name: "Passwort ändern", icon: Key },
       { id: "language", name: "Sprache", icon: Globe },
       { id: "notifications", name: "Benachrichtigungen", icon: Bell },
     ];

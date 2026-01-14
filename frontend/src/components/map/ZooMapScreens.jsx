@@ -114,7 +114,7 @@ export default function ZooMapScreens({ zooName = "Zoo Zuerich" }) {
           <div className="bg-gray-800 w-16 flex flex-col items-center py-4 space-y-4">
             {[
               { emoji: "🌊", label: "Aquarium" },
-              { emoji: "🦁", label: "Loewen" },
+              { emoji: "🦁", label: "Löwen" },
               { emoji: "🐘", label: "Elefanten" },
               { emoji: "🐒", label: "Affen" },
               { emoji: "🦎", label: "Reptilien" },
@@ -135,7 +135,7 @@ export default function ZooMapScreens({ zooName = "Zoo Zuerich" }) {
               <circle cx="150" cy="150" r="40" fill="#3182ce" opacity="0.7" />
               <text x="150" y="155" textAnchor="middle" fill="white" fontWeight="bold">Aquarium</text>
               <circle cx="300" cy="200" r="45" fill="#d97706" opacity="0.7" />
-              <text x="300" y="205" textAnchor="middle" fill="white" fontWeight="bold">Loewen</text>
+              <text x="300" y="205" textAnchor="middle" fill="white" fontWeight="bold">Löwen</text>
               <circle cx="500" cy="150" r="50" fill="#6b7280" opacity="0.7" />
               <text x="500" y="155" textAnchor="middle" fill="white" fontWeight="bold">Elefanten</text>
               <circle cx="650" cy="250" r="45" fill="#047857" opacity="0.7" />

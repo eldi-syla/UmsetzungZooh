@@ -31,7 +31,7 @@ function ImageWithFallback(props) {
   );
 }
 
-// Sample event data
+// Datenevent
 const eventsData = [
   {
     id: 1,
@@ -130,7 +130,7 @@ export default function ZooEventsApp() {
 
   return (
     <div className="relative flex flex-col w-full h-full bg-gray-900 text-white overflow-hidden">
-      {/* Background animal silhouettes */}
+      
       <div className="absolute inset-0 overflow-hidden opacity-5 pointer-events-none">
         <div className="absolute bottom-0 right-0 w-64 h-64">
           <svg viewBox="0 0 100 100" fill="white">
@@ -162,7 +162,7 @@ export default function ZooEventsApp() {
 function EventsListView({ events, onEventClick, searchTerm, setSearchTerm }) {
   return (
     <div className="flex flex-col w-full h-full overflow-y-auto">
-      {/* Header with logo, title, and search */}
+      {/* Header mit logo, titel, and Suche */}
       <div className="flex flex-col px-6 pt-6 pb-4 sticky top-0 bg-gray-900 z-10">
         {/* Logo */}
         <div className="flex items-center mb-4">
@@ -172,10 +172,10 @@ function EventsListView({ events, onEventClick, searchTerm, setSearchTerm }) {
           </div>
         </div>
 
-        {/* Title */}
+        {/* Titel */}
         <h1 className="text-2xl font-bold mb-4">Events</h1>
 
-        {/* Search and Filter */}
+        {/* Suche und Filter */}
         <div className="flex space-x-2 mb-4">
           <div className="relative flex-1">
             <input
@@ -195,7 +195,7 @@ function EventsListView({ events, onEventClick, searchTerm, setSearchTerm }) {
         </div>
       </div>
 
-      {/* Events Grid */}
+      
       <div className="grid grid-cols-2 gap-4 px-4 pb-20">
         {events.map((event) => (
           <EventCard key={event.id} event={event} onClick={() => onEventClick(event)} />
@@ -233,7 +233,7 @@ function EventCard({ event, onClick }) {
   );
 }
 
-// Event Detail View Component
+
 function EventDetailView({ event, onBackClick }) {
   const [isFavorite, setIsFavorite] = useState(false);
 
@@ -249,7 +249,7 @@ function EventDetailView({ event, onBackClick }) {
 
   return (
     <div className="flex flex-col w-full h-full overflow-y-auto">
-      {/* Header Image */}
+     
       <div className="relative w-full h-64">
         <ImageWithFallback
           src={event.imageUrl}
@@ -265,7 +265,7 @@ function EventDetailView({ event, onBackClick }) {
         </button>
       </div>
 
-      {/* Event Information */}
+     
       <div className="flex flex-col p-6 -mt-10 relative z-10">
         <h1 className="text-3xl font-bold mb-2">{event.title}</h1>
 
@@ -320,7 +320,7 @@ function EventDetailView({ event, onBackClick }) {
           ))}
         </div>
 
-        {/* Action Buttons */}
+        
         <div className="flex space-x-3 mb-8">
           <button
             onClick={toggleFavorite}
@@ -340,7 +340,7 @@ function EventDetailView({ event, onBackClick }) {
           </button>
         </div>
 
-        {/* Mini Map */}
+        {/* Mini Fake Map */}
         <div className="mb-6">
           <h3 className="text-lg font-semibold mb-3">Standort</h3>
           <div className="w-full h-40 bg-gray-800 rounded-lg overflow-hidden relative">
